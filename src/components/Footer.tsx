@@ -12,28 +12,27 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-hive-darkGray text-white pt-16 pb-8">
+    <footer className="bg-hive-black text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold mb-4">
-              <span className="text-white">Greater</span>
-              <span className="text-hive-yellow">Hive</span>
-            </h3>
+            <div className="flex items-center mb-4">
+              <img src="/logo.png" alt="GreaterHive Logo" className="h-12 w-auto mr-2" />
+            </div>
             <p className="text-gray-400">
               Connecting young volunteers with meaningful opportunities to make a difference.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -43,16 +42,13 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Home</a>
+                <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">Home</a>
               </li>
               <li>
-                <a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a>
+                <a href="#features" className="text-gray-400 hover:text-hive-yellow transition-colors">Features</a>
               </li>
               <li>
-                <a href="#how-it-works" className="text-gray-400 hover:text-white transition-colors">How It Works</a>
-              </li>
-              <li>
-                <a href="#testimonials" className="text-gray-400 hover:text-white transition-colors">Testimonials</a>
+                <a href="#how-it-works" className="text-gray-400 hover:text-hive-yellow transition-colors">How It Works</a>
               </li>
             </ul>
           </div>
@@ -61,16 +57,16 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a>
+                <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">Blog</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">FAQ</a>
+                <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">FAQ</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">For Organizations</a>
+                <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">For Organizations</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">For Students</a>
+                <a href="#" className="text-gray-400 hover:text-hive-yellow transition-colors">For Students</a>
               </li>
             </ul>
           </div>
@@ -80,13 +76,13 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-gray-400" />
-                <a href="mailto:info@greaterhive.org" className="text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:info@greaterhive.org" className="text-gray-400 hover:text-hive-yellow transition-colors">
                   info@greaterhive.org
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 text-gray-400" />
-                <a href="tel:+1234567890" className="text-gray-400 hover:text-white transition-colors">
+                <a href="tel:+1234567890" className="text-gray-400 hover:text-hive-yellow transition-colors">
                   (123) 456-7890
                 </a>
               </li>
@@ -107,9 +103,9 @@ const Footer: React.FC = () => {
               &copy; {new Date().getFullYear()} GreaterHive. All rights reserved.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">Cookie Policy</a>
+              <a href="#" className="text-gray-500 hover:text-hive-yellow text-sm transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-500 hover:text-hive-yellow text-sm transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-500 hover:text-hive-yellow text-sm transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>

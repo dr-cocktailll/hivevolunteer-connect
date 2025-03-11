@@ -21,13 +21,13 @@ const Button: React.FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  const baseClasses = 'inline-flex items-center justify-center font-medium transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-hive-blue focus:ring-opacity-50';
+  const baseClasses = 'inline-flex items-center justify-center font-medium transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-hive-yellow focus:ring-opacity-50';
   
   const variantClasses = {
-    primary: 'bg-hive-blue text-white hover:bg-hive-blue/90 active:bg-hive-blue/95',
-    secondary: 'bg-hive-yellow text-hive-darkGray hover:bg-hive-yellow/90 active:bg-hive-yellow/95',
-    outline: 'bg-transparent border border-hive-blue text-hive-blue hover:bg-hive-blue/10 active:bg-hive-blue/5',
-    ghost: 'bg-transparent text-hive-blue hover:bg-hive-blue/10 active:bg-hive-blue/5',
+    primary: 'bg-hive-yellow text-hive-black hover:bg-hive-yellow/90 active:bg-hive-yellow/95',
+    secondary: 'bg-hive-black text-white hover:bg-hive-black/90 active:bg-hive-black/95',
+    outline: 'bg-transparent border border-hive-yellow text-hive-black hover:bg-hive-yellow/10 active:bg-hive-yellow/5',
+    ghost: 'bg-transparent text-hive-black hover:bg-hive-yellow/10 active:bg-hive-yellow/5',
   };
   
   const sizeClasses = {

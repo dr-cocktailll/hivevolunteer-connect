@@ -32,9 +32,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-xl font-bold text-hive-blue">
-                Greater<span className="text-hive-yellow">Hive</span>
-              </span>
+              <img src="/logo.png" alt="GreaterHive Logo" className="h-12 w-auto mr-2" />
             </a>
           </div>
 
@@ -42,21 +40,15 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#features"
-              className="text-hive-darkGray hover:text-hive-blue transition-colors"
+              className="text-hive-black hover:text-hive-yellow transition-colors"
             >
               Features
             </a>
             <a
               href="#how-it-works"
-              className="text-hive-darkGray hover:text-hive-blue transition-colors"
+              className="text-hive-black hover:text-hive-yellow transition-colors"
             >
               How It Works
-            </a>
-            <a
-              href="#testimonials"
-              className="text-hive-darkGray hover:text-hive-blue transition-colors"
-            >
-              Testimonials
             </a>
             <Button>Get Started</Button>
           </div>
@@ -65,7 +57,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="text-hive-darkGray hover:text-hive-blue"
+              className="text-hive-black hover:text-hive-yellow"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
@@ -83,24 +75,17 @@ const Navbar: React.FC = () => {
             <div className="flex flex-col space-y-3 px-4">
               <a
                 href="#features"
-                className="text-hive-darkGray hover:text-hive-blue py-2 transition-colors"
+                className="text-hive-black hover:text-hive-yellow py-2 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
               </a>
               <a
                 href="#how-it-works"
-                className="text-hive-darkGray hover:text-hive-blue py-2 transition-colors"
+                className="text-hive-black hover:text-hive-yellow py-2 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
-              </a>
-              <a
-                href="#testimonials"
-                className="text-hive-darkGray hover:text-hive-blue py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Testimonials
               </a>
               <Button className="mt-2" isFullWidth>
                 Get Started

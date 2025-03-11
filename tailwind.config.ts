@@ -54,12 +54,13 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				hive: {
-					blue: "#0EA5E9",
-					blueLight: "#7DD3FC",
+					blue: "#0EA5E9", // keeping for compatibility
+					blueLight: "#7DD3FC", // keeping for compatibility
 					yellow: "#FACC15",
-					yellowLight: "#FEF08A",
+					yellowLight: "#FEF7CD", // updated to soft yellow
 					gray: "#F9FAFB",
-					darkGray: "#1F2937"
+					darkGray: "#1F2937",
+					black: "#000000"
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
