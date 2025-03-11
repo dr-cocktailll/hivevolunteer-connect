@@ -6,27 +6,27 @@ import FadeIn from './animations/FadeIn';
 
 const Hero: React.FC = () => {
   return (
-    <section className="pt-32 pb-24 relative overflow-hidden bg-gradient-to-b from-white to-hive-yellowLight">
+    <section className="pt-32 pb-24 relative overflow-hidden bg-[#403E43]">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1280&q=80')] bg-cover bg-center opacity-[0.03]"></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="text-center">
             <FadeIn>
-              <div className="inline-block mb-3 px-3 py-1 bg-hive-yellow/10 text-hive-black rounded-full text-sm font-medium">
+              <div className="inline-block mb-3 px-3 py-1 bg-[#FACC15] text-[#1A1F2C] rounded-full text-sm font-medium">
                 Find your perfect volunteer opportunity
               </div>
             </FadeIn>
 
             <FadeIn delay={100}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-hive-black">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
                 Connecting Youth to 
-                <span className="text-gradient block"> Meaningful Volunteer Experiences</span>
+                <span className="block text-[#FACC15]"> Meaningful Volunteer Experiences</span>
               </h1>
             </FadeIn>
 
             <FadeIn delay={200}>
-              <p className="text-lg md:text-xl text-hive-black mb-8 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
                 A user first social impact platform. Growing the next generation of giving.
               </p>
             </FadeIn>
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-hive-yellowLight to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#403E43] to-transparent"></div>
     </section>
   );
 };

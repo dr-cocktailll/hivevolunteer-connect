@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -54,13 +53,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				hive: {
-					blue: "#0EA5E9", // keeping for compatibility
-					blueLight: "#7DD3FC", // keeping for compatibility
 					yellow: "#FACC15",
-					yellowLight: "#FEF7CD", // updated to soft yellow
-					gray: "#F9FAFB",
-					darkGray: "#1F2937",
-					black: "#000000"
+					yellowLight: "#FEF7CD",
+					gray: "#8E9196",
+					darkGray: "#403E43",
+					black: "#1A1F2C"
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
