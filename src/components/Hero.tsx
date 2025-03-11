@@ -6,27 +6,27 @@ import FadeIn from './animations/FadeIn';
 
 const Hero: React.FC = () => {
   return (
-    <section className="pt-32 pb-24 relative overflow-hidden bg-[#403E43]">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1280&q=80')] bg-cover bg-center opacity-[0.03]"></div>
+    <section className="pt-32 pb-24 relative overflow-hidden bg-white">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1280&q=80')] bg-cover bg-center opacity-[0.02]"></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="text-center">
             <FadeIn>
-              <div className="inline-block mb-3 px-3 py-1 bg-[#FACC15] text-[#1A1F2C] rounded-full text-sm font-medium">
+              <div className="inline-block mb-3 px-3 py-1 bg-hive-yellow text-hive-black rounded-full text-sm font-light tracking-wide">
                 Find your perfect volunteer opportunity
               </div>
             </FadeIn>
 
             <FadeIn delay={100}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-hive-black tracking-tight">
                 Connecting Youth to 
-                <span className="block text-[#FACC15]"> Meaningful Volunteer Experiences</span>
+                <span className="block text-hive-yellow"> Meaningful Volunteer Experiences</span>
               </h1>
             </FadeIn>
 
             <FadeIn delay={200}>
-              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light">
                 A user first social impact platform. Growing the next generation of giving.
               </p>
             </FadeIn>
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
                 <HandHeart className="h-6 w-6 text-hive-yellow" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-hive-black">Cause Alignment</h3>
-              <p className="text-hive-black">Find opportunities that match your passions and values</p>
+              <p className="text-hive-black/80 font-light">Find opportunities that match your passions and values</p>
             </FadeIn>
 
             <FadeIn delay={500} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
                 <Calendar className="h-6 w-6 text-hive-yellow" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-hive-black">Smart Scheduling</h3>
-              <p className="text-hive-black">Works around your school timetable for perfect timing</p>
+              <p className="text-hive-black/80 font-light">Works around your school timetable for perfect timing</p>
             </FadeIn>
 
             <FadeIn delay={600} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
                 <MapPin className="h-6 w-6 text-hive-yellow" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-hive-black">Location Proximity</h3>
-              <p className="text-hive-black">Find opportunities close to your school or home</p>
+              <p className="text-hive-black/80 font-light">Find opportunities close to your school or home</p>
             </FadeIn>
 
             <FadeIn delay={700} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
@@ -71,13 +71,11 @@ const Hero: React.FC = () => {
                 <GraduationCap className="h-6 w-6 text-hive-yellow" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-hive-black">Youth Focused</h3>
-              <p className="text-hive-black">Designed specifically for students and young volunteers</p>
+              <p className="text-hive-black/80 font-light">Designed specifically for students and young volunteers</p>
             </FadeIn>
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#403E43] to-transparent"></div>
     </section>
   );
 };
