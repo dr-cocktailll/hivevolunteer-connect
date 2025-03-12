@@ -76,7 +76,7 @@ const HowItWorks: React.FC = () => {
           </div>
 
           <FadeIn className="text-center">
-            <Button size="lg">
+            <Button size="lg" onClick={() => window.open('https://forms.gle/gd2m8U5a8tkLRS9m8', '_blank')}>
               Start Your Journey
             </Button>
           </FadeIn>

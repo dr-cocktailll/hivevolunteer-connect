@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
             >
               How It Works
             </a>
-            <Button>Get Started</Button>
+            <Button onClick={() => window.open('https://forms.gle/gd2m8U5a8tkLRS9m8', '_blank')}>Get Started</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -87,7 +87,11 @@ const Navbar: React.FC = () => {
               >
                 How It Works
               </a>
-              <Button className="mt-2" isFullWidth>
+              <Button 
+                className="mt-2" 
+                isFullWidth 
+                onClick={() => window.open('https://forms.gle/gd2m8U5a8tkLRS9m8', '_blank')}
+              >
                 Get Started
               </Button>
             </div>

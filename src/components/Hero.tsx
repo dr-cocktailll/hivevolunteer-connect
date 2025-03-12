@@ -20,22 +20,25 @@ const Hero: React.FC = () => {
 
             <FadeIn delay={100}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-hive-black tracking-tight">
-                Connecting Youth to 
+                Connecting Youths to 
                 <span className="block text-hive-yellow"> Meaningful Volunteer Experiences</span>
               </h1>
             </FadeIn>
 
             <FadeIn delay={200}>
-              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light">
-                A user first social impact platform. Growing the next generation of giving.
+              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light italic transform hover:scale-105 transition-transform duration-500">
+                <span className="relative inline-block">
+                  A volunteer first social impact platform. Growing the next generation of giving.
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-hive-yellow transform scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
+                </span>
               </p>
             </FadeIn>
 
             <FadeIn delay={300} className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg">
+              <Button size="lg" onClick={() => window.open('https://forms.gle/gd2m8U5a8tkLRS9m8', '_blank')}>
                 Start Volunteering
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" onClick={() => window.open('https://forms.gle/gd2m8U5a8tkLRS9m8', '_blank')}>
                 Learn More
               </Button>
             </FadeIn>
