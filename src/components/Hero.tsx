@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             <FadeIn delay={200}>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light italic transform hover:scale-105 transition-transform duration-500">
                 <span className="relative inline-block">
-                  A volunteer first social impact platform. Growing the next generation of giving.
+                  A volunteer-first social impact platform. Growing the next generation of giving.
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-hive-yellow transform scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
                 </span>
               </p>
